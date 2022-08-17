@@ -13,3 +13,44 @@
  *= require_tree .
  *= require_self
  */
+li {
+  list-style: none;
+}
+ul {
+  display: flex;
+}
+nav{
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  font-size: 20px;
+  background-color: rgb(232, 240, 244);
+}
+.container{
+  margin-top: 10px;
+}
+
+.titles{
+  margin-bottom: 25px;
+}
+
+.card{
+  margin: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) ;
+}
+
+.show-container{
+  display:flex;
+}
+.share-card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.date-form{
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2)
+}

@@ -1,0 +1,62 @@
+<dif class="container show-container" style="background-image: url('<%= @flat.picture_url%>');">
+  <div class="flat-info">
+    <div class="card">
+        <div class="card-body">
+        <h1><%= @flat.name %></h1>
+        <h5><%= @flat.address %></h5>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-body">
+        <h3>A bit more about this flat</h3>
+        <p><%= @flat.description %></p>
+      </div>
+    </div>
+
+
+  </div>
+  <div class="form-info">
+    <form class="date-form">
+      <div class="form-column">
+        <h3>Book this place!</h3>
+        <div class="col-auto">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">From:</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="12/10/2022">
+          </div>
+        </div>
+        <div class="col-auto">
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">To:</div>
+            </div>
+            <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="19/10/2022">
+          </div>
+        </div>
+        <div class="col-auto">
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Submit</button>
+        </div>
+      </div>
+    </form>
+    <div class="card">
+      <div class="card-body">
+        <h3>Details</h3>
+        <i class="fa-solid fa-user-group"></i><%=@flat.number_of_guests%>
+        <i class="fa-solid fa-euro-sign"></i><%=@flat.price_per_night%>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-body share-card">
+        <h3>Share</h3>
+        <div class="icons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+          <i class="fa-brands fa-square-pinterest"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</dif>
